@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="resp" href="script.js">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Professional Website</h1>
+            <p>Embark on an extraordinary journey through the realm of boundless creativity and relentless innovation.</p>
+            <a href="#portfolio" class="btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>👋 I'm Shreyan Nandanwar,<br> a passionate individual with a deep fascination for the world of technology and innovation.<br> I thrive on exploring the possibilities <br>that cutting-edge technology offers and leveraging it to create impactful solutions.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <!-- Add your portfolio items here -->
+            <div class="portfolio-item">
+                <img class="circular--square" src="png-transparent-professional-python-programmer-computer-programming-android-android-blue-logo-computer-program-thumbnail.png" alt="Python">
+                <h3>Python</h3>
+                <span>Python</span>
+                <p>Automation</p>
+                    <p>Working with Libraries</p>
+                    <p>Web Scraping</p>
+                    <p>API Integration</p>
+                    <p>Data Handling</p>
+                    <p>Local Hosting</p>
+               </p>
+            </div>
+            <div class="portfolio-item">
+                <img src="5234318.png" alt="Project 2">
+                <h3>Web-Designing</h3>
+                <p>
+                    <p>Html - Web Structuring</p>
+                    <p>CSS - Decorative features</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" row="3" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Shreyan Nandanwar's Website. All rights reserved. Since 2023</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+                    Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "relaxfalls2@gmail.com",
+            Password : "B5C99A5CE059F250085A22BD5D736BBF1BEC2D90788EF62FBF21A8DABAC4DB5F6F1641BC5680AF44A0E4E0B26841B7B1",
+            To : "shreyannandanwar+portfolio@gmail.com",
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : document.getElementById("message").value
+        }).then(
+        message => alert(message)
+        );
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--B5C99A5CE059F250085A22BD5D736BBF1BEC2D90788EF62FBF21A8DABAC4DB5F6F1641BC5680AF44A0E4E0B26841B7B1-->
